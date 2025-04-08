@@ -20,7 +20,15 @@ namespace statistics
 
             int stdCount = data.GetLength(0) - 1;
             // ---------- TODO ----------
-            
+            // Average Scores
+            int[] Mathscore = new int[stdCount];
+            int[] Sciencescore = new int[stdCount];
+            int[] Englishscore = new int[stdCount];
+            for (int i = 1; i <= stdCount; i++) {Mathscore[i - 1] = double.Parse(date[i, 2]); Sciencescore[i - 1] = double.Parse(data[i, 3]); Englishscore[i - 1]= double.Parse(data[i, 4]);}
+            Console.WriteLine("Average Scores:");
+            Console.WriteLine($"Math: {Mathscore.sum() / stdCount}");
+            Console.WriteLine($"Science: {Sciencescore.sum() / stdCount}");
+            Console.WriteLine($"English: {Englishscore.sum() / stdCount}");
             // --------------------
         }
     }
