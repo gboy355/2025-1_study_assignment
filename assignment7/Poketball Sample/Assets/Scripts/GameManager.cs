@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
     {
         // "{ballName} falls"을 1초간 띄운다.
         // ---------- TODO ---------- 
-        
+        MyUIManager.DisplayText(ballName)
         // -------------------- 
     }
 }
