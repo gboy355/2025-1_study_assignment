@@ -6,7 +6,7 @@ public class Character : MonoBehaviour
 {
     const float CharacterJumpPower = 7f;
     const int MaxJump = 2;
-    int RemainJump = 2;
+    int RemainJump = 0;
     GameManager GM;
 
     void Awake()
